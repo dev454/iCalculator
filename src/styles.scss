@@ -1,0 +1,51 @@
+$font-stack: Helvetica, Arial, sans-serif;
+
+*{
+    font-family: $font-stack;
+}
+
+body{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+button {
+    border-radius: 50%;
+    background-color: inherit;
+    outline: 0;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.2rem;
+    border: 0;
+    font-size: 1.2rem;
+}
+
+button:hover, button:active, button:focus{
+    animation-name: animate-digit-click;
+    animation-duration: 0.5s;
+}
+
+@keyframes animate-digit-click {
+    to{
+        filter: brightness(130%);
+    }
+}
+
+.action-btn:focus, .action-btn:active{
+    background-color: #fff!important;
+    color: #ff9500;
+    animation-name: animate-action-btn-click;
+    animation-duration: 0.5s;
+}
+
+#display{
+    margin-left: 0.8rem;
+    font-size: 2rem;
+}
+
+@keyframes animate-action-btn-click {
+    to{
+        background-color: #fff!important;
+        color: #ff9500;
+    }
+}
